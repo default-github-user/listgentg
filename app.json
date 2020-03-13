@@ -1,0 +1,7 @@
+{
+  "name": "listgentg",
+  "description": "No one knows what it does. Hashing experiment",
+  "repository": "https://github.com/default-github-user/listgentg",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["node", "express", "static"]
+}
