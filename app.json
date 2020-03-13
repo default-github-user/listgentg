@@ -3,18 +3,29 @@
   "description": "No one knows what it does. Hashing experiment",
   "repository": "https://github.com/default-github-user/listgentg",
   "logo": "http://node-js-sample.herokuapp.com/node.svg",
-  "keywords": ["node", "express", "static"],
+  "keywords": [
+    "console",
+    "editor",
+    "file",
+    "file manager",
+    "folder",
+    "orthodox"
+  ],
   "env": {
-    "BOT_TOKEN": {
-      "description": "TG Bot Token",
-    },
-    "A": {
-      "description": "A digit",
-    },
-    "Z": {
-      "description": "Z Digit"
-    }
+      "BOT_TOKEN": {
+          "description": "TG Bot Token",
+          "value": "false",
+          "required": true
+      },
+      "A": {
+          "description": "A value",
+          "value": "0",
+          "required": true
+      },
+      "Z": {
+          "description": "Z value [usually increase by 10^7. so it z at 1000000-1 = 999999]",
+          "value": "1000000",
+          "required": true
+      }
   }
 }
-
-
