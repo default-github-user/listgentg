@@ -1,12 +1,41 @@
 const TelegramBot = require('node-telegram-bot-api');
 
-const token = process.env.BOT_TOKEN
 
+//n = process.env.BOT_NUM
+
+a = process.env.A
+z = process.env.Z
+
+const  = process.env.BOT_TOKEN
 const bot = new TelegramBot(token, {polling: true});
 
 
-bot.on('message', (msg) => {
-    
+
+
+const express = require("express");
+const app = express();
+
+// we've started you off with Express,
+
+// http://expressjs.com/en/starter/static-files.html
+app.use(express.static("public"));
+
+// http://expressjs.com/en/starter/basic-routing.html
+app.get('/', (req, res) => {
+  res.send("generating: " + a + "-" + z );
+});
+// listen for requests :)
+const listener = app.listen(process.env.PORT, function() {
+  console.log("Your app is listening on port " + listener.address().port);
+});
+
+
+
+
+
+
+
+bot.on('message', (msg) => { 
 var Hi = "hi";
 if (msg.text.toString().toLowerCase().indexOf(Hi) === 0) {
 bot.sendMessage(msg.chat.id,"Hello dear user");
@@ -15,7 +44,6 @@ bot.sendMessage(msg.chat.id,"Hello dear user");
 });
 
 bot.on('message', (msg) => {
-    
 var Hi = "help";
 if (msg.text.toString().toLowerCase().indexOf(Hi) === 0) {
 bot.sendMessage(msg.chat.id,"type `hi` to say hi.\n type `checkid` to check chat id.\n type `gen` to gen list.\n type `checkgen` to check if the gen is running.");
@@ -44,12 +72,6 @@ bot.sendMessage(msg.chat.id,"Current Chat ID is: " + msg.chat.id);
 } 
     
 });
-
-
-//n = process.env.BOT_NUM
-
-a = process.env.A
-z = process.env.Z
 
 
 bot.on('message', (msg) => {
