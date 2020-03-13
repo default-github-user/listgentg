@@ -3,5 +3,17 @@
   "description": "No one knows what it does. Hashing experiment",
   "repository": "https://github.com/default-github-user/listgentg",
   "logo": "http://node-js-sample.herokuapp.com/node.svg",
-  "keywords": ["node", "express", "static"]
+  "keywords": ["node", "express", "static"],
+  "env": {
+    "BOT_TOKEN": {
+      "description": "TG Bot Token",
+    },
+    "A": {
+      "description": "A digit",
+    },
+    "Z": {
+      "description": "Z Digit",
+    }
 }
+
+
