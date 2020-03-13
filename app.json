@@ -12,8 +12,9 @@
       "description": "A digit",
     },
     "Z": {
-      "description": "Z Digit",
+      "description": "Z Digit"
     }
+  }
 }
 
 
